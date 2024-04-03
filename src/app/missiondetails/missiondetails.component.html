@@ -1,0 +1,20 @@
+<div *ngIf="mission">
+  <div class="mission-details">
+    <img src="{{ mission.links.mission_patch_small }}" alt="{{ mission.mission_name }} logo" class="mission-image">
+    <h2>{{ mission.mission_name }}</h2>
+    <div>Launch Year: {{ mission.launch_year }}</div>
+
+    <h2>Rocket:</h2>
+      <div>Name: {{ mission.rocket.rocket_name }} </div>
+      <div>Type: {{ mission.rocket.rocket_type }} </div>
+    
+
+    <h2>Launch Site:</h2>
+      <div>{{ mission.launch_site.site_name_long }} </div>
+
+    <h2>Details:</h2>
+      <div>{{ mission.details }}</div>
+    
+
+  </div>
+</div>

@@ -1,0 +1,110 @@
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  background-color: #f0f0f0; /* Change background color */
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 600px; /* Set maximum width */
+  margin: 0 auto 20px; /* Center horizontally */
+}
+
+.mission-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mission-image {
+  width: 70px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.mission-details {
+  flex: 1;
+  text-align: center; /* Align content to the left */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #f0f0f0; /* Same as card background */
+}
+
+/* Search Button */
+.search-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: black; /* Black background */
+  color: #f0f0f0; /* Text color same as card background */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #333; /* Darker shade of black on hover */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Same as card background */
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content {
+  margin-top: 20px;
+}
